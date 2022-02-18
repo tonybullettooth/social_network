@@ -4,11 +4,11 @@ import Post from "./Post/Post";
 
 const MyPosts = () => {
     let postData = [
-        {id: '1', message: 'Hi', likeCounts: 15},
+        {id: '1', message: 'Hi!', likeCounts: 15},
         {id: '2', message: 'how are you?', likeCounts: 20},
-        {id: '3', message: 'super hi', likeCounts: 22},
+        {id: '3', message: 'super hi!', likeCounts: 22},
         {id: '4', message: 'It is my first project.', likeCounts: 13},
-        {id: '5', message: 'bye', likeCounts: 11},
+        {id: '5', message: 'bye!', likeCounts: 11},
     ]
     let postsElements = postData.map( p => <Post message={p.message} likesCount={p.likeCounts}/>)
     return (
